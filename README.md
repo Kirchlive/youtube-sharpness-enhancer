@@ -13,12 +13,12 @@ A userscript that adds a sharpness toggle switch for YouTube.
 ### Sharpness Enhancer Comparison 1
 <img src="https://i.imgur.com/ykHFZon.png" alt="Before1: Video without enhancement" width="640"/>
 <img src="https://i.imgur.com/CVpfZjl.png" alt="After1: Video with enhancement" width="640"/>
-Source: [](https://www.youtube.com/@LofiGirl)
+<font size="1">Source: https://www.youtube.com/@LofiGirl</font>
 
 ### Sharpness Enhancer Comparison 2
 <img src="https://i.imgur.com/o3qgkOd.png" alt="Before2: Video without enhancement" width="640"/>
 <img src="https://i.imgur.com/ye0XHYA.png" alt="After2: Video with enhancement" width="640"/>
-Source: https://www.youtube.com/watch?v=LXb3EKWsInQ
+<font size="1">Source: https://www.youtube.com/watch?v=LXb3EKWsInQ</font>
 
 ## Installation
 1. Install a userscript manager extension like Tampermonkey for your browser.
