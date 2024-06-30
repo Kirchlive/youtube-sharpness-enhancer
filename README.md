@@ -25,7 +25,7 @@ The script applies a sharpness filter to the video using SVG filters and CSS. It
 Source: https://www.youtube.com/@LofiGirl
 
 ### Comparison 2
-<img src="" alt="Before2: Video without enhancement" width="640"/>
+<img src="https://i.imgur.com/o3qgkOd.png" alt="Before2: Video without enhancement" width="640"/>
 <img src="https://i.imgur.com/ye0XHYA.png" alt="After2: Video with enhancement" width="640"/>
 Source: https://www.youtube.com/watch?v=LXb3EKWsInQ
 
