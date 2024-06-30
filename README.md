@@ -18,9 +18,6 @@ Navigate to a YouTube video and use the Sharpness Enhancer toggle switch in the 
 ## How it works
 The script applies a sharpness filter to the video using SVG filters and CSS. It slightly adjusts contrast and brightness to maintain overall video quality while enhancing sharpness.
 
-## Compatibility
-This script is designed for use with YouTube's current layout. It may need updates if YouTube significantly changes its player interface.
-
 ## Before and After Comparison
 
 ### Sharpness Enhancer Comparison 1
@@ -32,6 +29,9 @@ Source: https://www.youtube.com/@LofiGirl
 <img src="https://i.imgur.com/o3qgkOd.png" alt="Before2: Video without enhancement" width="640"/>
 <img src="https://i.imgur.com/ye0XHYA.png" alt="After2: Video with enhancement" width="640"/>
 Source: https://www.youtube.com/watch?v=LXb3EKWsInQ
+
+## Compatibility
+This script is designed for use with YouTube's current layout. It may need updates if YouTube significantly changes its player interface.
 
 ## Contributing
 Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/YourUsername/youtube-video-sharpness-enhancer/issues) if you want to contribute.
