@@ -8,6 +8,18 @@ A userscript that adds a sharpness toggle switch for YouTube.
 - Improves the image sharpness of YouTube videos
 - Maintains video contrast and brightness
 
+## Before and After Comparison
+
+### Sharpness Enhancer Comparison 1
+![Before: Video without enhancement](https://i.imgur.com/ykHFZon.png)
+![After: Video with enhancement](https://i.imgur.com/CVpfZjl.png)
+Source: [Youtube@LofiGirl](https://www.youtube.com/@LofiGirl) 
+
+### Sharpness Enhancer Comparison 2
+![Before: Video without enhancement](https://i.imgur.com/o3qgkOd.png)
+![After: Video with enhancement](https://i.imgur.com/ye0XHYA.png)
+Source: [youtube@COSTA RICA IN 4K 60fps HDR](https://www.youtube.com/watch?v=LXb3EKWsInQ) 
+
 ## Installation
 1. Install a userscript manager extension like Tampermonkey for your browser.
 2. Click [here](https://github.com/Kirchlive/youtube-video-sharpness-enhancer/raw/main/youtube-video-sharpness-enhancer.user.js) to install the script.
