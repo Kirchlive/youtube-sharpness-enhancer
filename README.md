@@ -11,8 +11,8 @@ A userscript that adds a sharpness toggle switch for YouTube.
 ## Before and After Comparison
 
 ### Sharpness Enhancer Comparison 1
-<img src="https://i.imgur.com/ykHFZon.png" alt="Before: Video without enhancement" width="400"/>
-<img src="https://i.imgur.com/CVpfZjl.png" alt="Before: Video without enhancement" width="400"/>
+<img src="https://i.imgur.com/ykHFZon.png" alt="Before: Video without enhancement" width="800"/>
+<img src="https://i.imgur.com/CVpfZjl.png" alt="Before: Video without enhancement" width="800"/>
 ![Before: Video without enhancement](https://i.imgur.com/ykHFZon.png)
 ![After: Video with enhancement](https://i.imgur.com/CVpfZjl.png)
 Source: [Youtube@LofiGirl](https://www.youtube.com/@LofiGirl) 
