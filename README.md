@@ -25,7 +25,7 @@ The script applies a sharpness filter to the video using SVG filters and CSS. It
 Source: https://www.youtube.com/@LofiGirl
 
 ### Comparison 2
-<img src="https://i.imgur.com/o3qgkOd.png" alt="Before2: Video without enhancement" width="640"/>
+<img src="" alt="Before2: Video without enhancement" width="640"/>
 <img src="https://i.imgur.com/ye0XHYA.png" alt="After2: Video with enhancement" width="640"/>
 Source: https://www.youtube.com/watch?v=LXb3EKWsInQ
 
@@ -37,6 +37,9 @@ Contributions, issues, and feature requests are welcome. Feel free to check the 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+##Greasy Fork
+[greasyfork/youtube-video-sharpness-enhancer](https://greasyfork.org/de/scripts/499279-youtube-video-sharpness-enhancer)
 
 ## Author
 Kirch
