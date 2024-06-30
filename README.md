@@ -39,7 +39,7 @@ Contributions, issues, and feature requests are welcome. Feel free to check the 
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Author
-Kirchlive
+Kirch
 
 ## Version
 1.4
