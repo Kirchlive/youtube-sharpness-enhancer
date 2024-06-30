@@ -18,7 +18,7 @@ Source: [](https://www.youtube.com/@LofiGirl)
 ### Sharpness Enhancer Comparison 2
 <img src="https://i.imgur.com/o3qgkOd.png" alt="Before2: Video without enhancement" width="640"/>
 <img src="https://i.imgur.com/ye0XHYA.png" alt="After2: Video with enhancement" width="640"/>
-Source: [](https://www.youtube.com/watch?v=LXb3EKWsInQ) 
+Source: https://www.youtube.com/watch?v=LXb3EKWsInQ
 
 ## Installation
 1. Install a userscript manager extension like Tampermonkey for your browser.
