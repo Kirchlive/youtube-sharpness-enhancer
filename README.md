@@ -1,4 +1,4 @@
-# YouTube Video Sharpness Enhancer 🚀
+# YouTube Sharpness Enhancer 🚀
 
 A userscript that adds a sharpness toggle switch for YouTube.
 
