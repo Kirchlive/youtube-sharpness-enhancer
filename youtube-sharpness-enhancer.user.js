@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         YouTube Video Sharpness Enhancer
+// @name         YouTube Sharpness Enhancer
 // @namespace    http://tampermonkey.net/
 // @version      1.4
 // @description  A userscript that adds a sharpness toggle switch for YouTube videos.
