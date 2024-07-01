@@ -33,7 +33,7 @@ Source: https://www.youtube.com/watch?v=LXb3EKWsInQ
 This script is designed for use with YouTube's current layout. It may need updates if YouTube significantly changes its player interface.
 
 ## Contributing
-Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/YourUsername/youtube-video-sharpness-enhancer/issues) if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/YourUsername/youtube-sharpness-enhancer/issues) if you want to contribute.
 
 ## License
 [MIT](https://github.com/Kirchlive/youtube-sharpness-enhancer/blob/main/MIT%20License)
