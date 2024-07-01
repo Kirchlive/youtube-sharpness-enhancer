@@ -39,7 +39,7 @@ Contributions, issues, and feature requests are welcome. Feel free to check the 
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Greasy Fork
-[greasyfork/youtube-video-sharpness-enhancer](https://greasyfork.org/de/scripts/499279-youtube-video-sharpness-enhancer)
+[greasyfork/youtube-video-sharpness-enhancer](https://greasyfork.org/en/scripts/499365-youtube-sharpness-enhancer)
 
 ## Author
 Kirch
