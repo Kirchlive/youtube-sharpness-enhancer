@@ -8,7 +8,7 @@
 // @grant        GM_getValue
 // @license      MIT
 // @author       Kirch (Kirchlive)
-// @downloadURL  https://update.greasyfork.org/scripts/499365/YouTube-Sharpness-Enhancer.user.js
+// @downloadURL  https://github.com/Kirchlive/youtube-sharpness-enhancer/blob/main/youtube-sharpness-enhancer.user.js
 // @updateURL    https://github.com/Kirchlive/youtube-sharpness-enhancer/releases
 // ==/UserScript==
 
