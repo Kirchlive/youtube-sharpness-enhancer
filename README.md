@@ -36,7 +36,7 @@ This script is designed for use with YouTube's current layout. It may need updat
 Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](https://github.com/YourUsername/youtube-video-sharpness-enhancer/issues) if you want to contribute.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/Kirchlive/youtube-sharpness-enhancer/blob/main/LICENSE)
 
 ## Greasy Fork
 [greasyfork/youtube-video-sharpness-enhancer](https://greasyfork.org/en/scripts/499365-youtube-sharpness-enhancer)
