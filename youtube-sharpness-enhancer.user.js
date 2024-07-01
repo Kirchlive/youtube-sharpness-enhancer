@@ -6,8 +6,8 @@
 // @match        https://www.youtube.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
-// @downloadURL  https://github.com/Kirchlive/youtube-video-sharpness-enhancer/raw/main/youtube-video-sharpness-enhancer.user.js
-// @updateURL    https://github.com/Kirchlive/youtube-video-sharpness-enhancer/releases/tag/v1.4
+// @downloadURL  https://github.com/Kirchlive/youtube-sharpness-enhancer/blob/main/youtube-sharpness-enhancer.user.js
+// @updateURL    https://github.com/Kirchlive/youtube-sharpness-enhancer/releases/tag/v1.4
 // @license      MIT
 // @author       Kirch (Kirchlive)
 // ==/UserScript==
