@@ -6,10 +6,10 @@
 // @match        https://www.youtube.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
-// @downloadURL  https://github.com/Kirchlive/youtube-sharpness-enhancer/blob/main/youtube-sharpness-enhancer.user.js
-// @updateURL    https://github.com/Kirchlive/youtube-sharpness-enhancer/releases/tag/v1.4
 // @license      MIT
 // @author       Kirch (Kirchlive)
+// @downloadURL  https://update.greasyfork.org/scripts/499365/YouTube-Sharpness-Enhancer.user.js
+// @updateURL    https://github.com/Kirchlive/youtube-sharpness-enhancer/releases
 // ==/UserScript==
 
 (function() {
