@@ -10,7 +10,7 @@ A userscript that adds a sharpness toggle switch for YouTube.
 
 ## Installation
 1. Install a userscript manager extension like Tampermonkey for your browser.
-2. Click [here](https://github.com/Kirchlive/youtube-video-sharpness-enhancer/raw/main/youtube-video-sharpness-enhancer.user.js) to install the script.
+2. Click [here](https://github.com/Kirchlive/youtube-sharpness-enhancer/raw/main/youtube-sharpness-enhancer.user.js) to install the script.
 
 ## Usage
 Navigate to a YouTube video and use the Sharpness Enhancer toggle switch in the lower right corner of the video player.
