@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Sharpness Enhancer
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  A userscript that adds a sharpness toggle switch for YouTube videos.
 // @match        https://www.youtube.com/*
 // @grant        GM_setValue
@@ -12,26 +12,57 @@
 // @updateURL    https://github.com/Kirchlive/youtube-sharpness-enhancer/releases
 // ==/UserScript==
 
-(function() {
+(function () {
     'use strict';
 
     function addSVGFilter() {
-        const svgFilter = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svgFilter.setAttribute('width', '0');
-        svgFilter.setAttribute('height', '0');
-        svgFilter.innerHTML = `
-            <filter id="sharpness-filter">
-                <feConvolveMatrix order="3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0"/>
-            </filter>
-        `;
-        document.body.appendChild(svgFilter);
+    const svgFilter = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svgFilter.setAttribute('width', '0');
+    svgFilter.setAttribute('height', '0');
+    svgFilter.innerHTML = `
+        <filter id="sharpness-filter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0.4" result="blur"/>
+            <feConvolveMatrix in="SourceGraphic" order="3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" result="sharpened"/>
+            <feComposite operator="in" in="sharpened" in2="SourceGraphic" result="composite"/>
+            <feComponentTransfer in="composite">
+                <feFuncR type="linear" slope="1.1"/>
+                <feFuncG type="linear" slope="1.1"/>
+                <feFuncB type="linear" slope="1.1"/>
+            </feComponentTransfer>
+        </filter>
+    `;
+    document.body.appendChild(svgFilter);
+}
+    function calculateOptimalContrast(video) {
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+        const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imageData.data;
+
+        let luminanceSum = 0;
+        for (let i = 0; i < data.length; i += 4) {
+            const r = data[i];
+            const g = data[i + 1];
+            const b = data[i + 2];
+            const luminance = 0.299 * r + 0.587 * g + 0.114 * b;
+            luminanceSum += luminance;
+        }
+
+        const avgLuminance = luminanceSum / (data.length / 4);
+        const contrastValue = avgLuminance > 128 ? 1.02 : 1.025;
+
+        return contrastValue;
     }
 
     function applySharpnessFilter(video, isEnabled) {
         if (isEnabled) {
-            const sharpnessValue = 0.0005;
-            const contrastValue = 0.995 - sharpnessValue * 0.5;
-            const brightnessValue = 1 + sharpnessValue * 0.1;
+            const contrastValue = calculateOptimalContrast(video);
+            const brightnessValue = 0.95;
             video.style.filter = `url(#sharpness-filter) contrast(${contrastValue}) brightness(${brightnessValue})`;
         } else {
             video.style.filter = 'none';
@@ -113,12 +144,11 @@
         const toggle = toggleContainer.querySelector('#sharpness-toggle');
         const video = document.querySelector('video');
 
-        // Lade den gespeicherten Zustand
         const savedState = GM_getValue('sharpnessEnhancerEnabled', false);
         toggle.checked = savedState;
         applySharpnessFilter(video, savedState);
 
-        toggle.addEventListener('change', function() {
+        toggle.addEventListener('change', function () {
             GM_setValue('sharpnessEnhancerEnabled', this.checked);
             applySharpnessFilter(video, this.checked);
         });
@@ -134,7 +164,6 @@
         }
     }
 
-    // Überwache Seitenwechsel
     let lastUrl = location.href;
     new MutationObserver(() => {
         const url = location.href;
@@ -142,7 +171,7 @@
             lastUrl = url;
             setTimeout(waitForVideo, 1000);
         }
-    }).observe(document, {subtree: true, childList: true});
+    }).observe(document, { subtree: true, childList: true });
 
     waitForVideo();
 })();
